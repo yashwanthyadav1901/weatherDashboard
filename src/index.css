@@ -1,0 +1,260 @@
+:root {
+  --section-overlay: rgba(0, 0, 0, 0.7);
+  --background-overlay: rgba(0, 0, 0, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--background-overlay);
+}
+
+.container {
+  max-width: 80%;
+  margin: auto;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-logo {
+  padding: 0.5rem 1rem;
+  border: none;
+  color: white;
+  border-radius: 00.4rem;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--section-overlay);
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.nav-section {
+  width: 25%;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  color: white;
+  margin: 1rem;
+}
+
+.nav-section__inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section-overlay);
+}
+
+.nav-section__inputs > input {
+  border: 0.8px solid white;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  color: white;
+  padding: 0.5rem;
+  font-size: 15px;
+  font-weight: 200;
+}
+
+.nav-section__inputs > input:focus {
+  outline: none;
+}
+
+.nav-section__inputs > button {
+  padding: 10px 50px;
+  border: none;
+  border-radius: 00.4rem;
+  font-size: 15px;
+  font-weight: 500;
+  background-color: white;
+}
+
+.nav-section__inputs > button:hover {
+  cursor: pointer;
+  background-color: lightgray;
+}
+
+.main {
+  display: flex;
+  gap: 4rem;
+
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Top  */
+
+.section {
+  width: 25%;
+  border-radius: 0.4rem;
+  color: white;
+  padding: 1rem;
+}
+
+.section__inputs,
+.section__temperature {
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--section-overlay);
+}
+
+.icon {
+  width: 100%;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc > h3 {
+  font-size: 15px;
+  font-weight: 200;
+  text-transform: capitalize;
+  padding: 0.5rem;
+}
+
+.desc-cards {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  padding: 1rem 0;
+}
+
+.desc-card {
+  text-align: center;
+  padding: 0.5rem 1.5rem;
+  line-height: 1.5;
+  border-radius: 7px;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.green {
+  background-color: #15a148;
+}
+
+.feels_like {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  font-size: 10px;
+  text-transform: capitalize;
+
+  margin-top: 1rem;
+}
+
+.temperature {
+  display: grid;
+  grid-template-columns: 1.3fr 2fr;
+  align-items: center;
+}
+
+.description {
+  text-align: center;
+  font-size: 20px;
+}
+
+.underline {
+  padding: 0.8rem;
+  justify-content: center;
+}
+
+.temperature > h1 {
+  font-size: 50px;
+}
+
+.story-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 1rem;
+  font-size: 10px;
+  text-transform: capitalize;
+  color: white;
+  background-color: var(--section-overlay);
+  padding: 2rem 1rem;
+}
+
+.stories {
+  display: flex;
+  gap: 1rem;
+}
+
+.story {
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Adjust size as needed */
+  border-radius: 50%;
+  padding: 1px; /* Space for the gradient border */
+  background: linear-gradient(45deg, #e6e6e6, #ffffff, #e6e6e6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.story-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: white;
+  padding: 2px;
+  border: 2px solid transparent;
+}
+
+.scheduler {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 3rem;
+  font-size: 12px;
+  text-transform: capitalize;
+  overflow-y: auto;
+}
+
+.scheduler h1 {
+  color: white;
+  padding-bottom: 0.5rem;
+}
+
+.calendar {
+  padding: 0 7rem;
+}
+
+.citynotfound {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

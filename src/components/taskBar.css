@@ -1,0 +1,73 @@
+.task-main {
+  height: 56vh;
+  border-radius: 0.4rem;
+}
+
+.bg {
+  background-color: var(--section-overlay);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 0.3rem 0;
+  text-transform: capitalize;
+}
+
+.task-input > input {
+  border: 0.8px solid white;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  font-size: 12px;
+  font-weight: 200;
+  margin-right: 0.5rem;
+}
+
+.task-input > input:focues {
+  outline: none;
+}
+
+.button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0.4rem;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0 0.2rem;
+  color: white;
+}
+
+.todo-container {
+  max-height: 36vh;
+  overflow-y: auto;
+
+  border-radius: 0.4rem;
+}
+
+.todo-item {
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+  font-size: 15px;
+  padding: 0.5rem;
+  border-radius: 7px;
+  transition: all 0.3s;
+  margin-bottom: 0.3rem;
+}
+
+.todo-item:hover {
+  background-color: var(--section-overlay);
+}
+
+.todo-item.done {
+  text-decoration: line-through;
+  background-color: grey;
+}
+
+.red {
+  background-color: red;
+}
